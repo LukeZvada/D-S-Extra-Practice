@@ -5,4 +5,4 @@ import { businessList, NewYorkCompanies } from "./BusinessList.js";
 
 businessList()
 // business()
-NewYorkCompanies
+NewYorkCompanies()
