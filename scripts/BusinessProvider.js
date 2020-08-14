@@ -111,11 +111,11 @@ const businesses = [
     }
   ];
 
-  export const useBusiness = () => { 
+    export const useBusiness = () => { 
       return businesses.slice()
   }
 
-  export const filterNYBusiness = businesses.filter(businessObj => {
+    export const filterNYBusiness = businesses.filter(businessObj => {
         if (businessObj.addressStateCode === "NY") {
             return true;
 
@@ -123,7 +123,7 @@ const businesses = [
             return false 
 })
 
-export const filterManufacturingBusiness = businesses.filter(manufacturingObj => {
+    xport const filterManufacturingBusiness = businesses.filter(manufacturingObj => {
         if (manufacturingObj.companyIndustry === "Manufacturing") {
             return true
         }
