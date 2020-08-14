@@ -122,3 +122,10 @@ const businesses = [
         } 
             return false 
 })
+
+export const filterManufacturingBusiness = businesses.filter(manufacturingObj => {
+        if (manufacturingObj.companyIndustry === "Manufacturing") {
+            return true
+        }
+            return false
+})

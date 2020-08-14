@@ -1,6 +1,6 @@
 import { useBusiness } from "./BusinessProvider.js";
-import { business } from "./Business.js";
-import { filterNYBusiness } from "./BusinessProvider.js";
+import { business, nycBusiness, manufacturingBusiness } from "./Business.js";
+import { filterNYBusiness, filterManufacturingBusiness } from "./BusinessProvider.js";
 
 const contentTarget = document.querySelector("#container")
 
@@ -18,7 +18,16 @@ export const NewYorkCompanies = () => {
     contentTarget.innerHTML += "<h2> New York Companies</h2>"
     
     NYbizArr.forEach((NYBizObj) =>{
-        contentTarget.innerHTML += business(NYBizObj)
+        contentTarget.innerHTML += nycBusiness(NYBizObj)
 
+    })
+}
+
+export const manufacturingCompanies = () => { 
+    const ManbizArr = filterManufacturingBusiness
+    contentTarget.innerHTML += "<h3> Manufacturing Companies</h3>"
+
+    ManbizArr.forEach(manufacturingCompaniesObj => { 
+        contentTarget.innerHTML += manufacturingBusiness(manufacturingCompaniesObj)
     })
 }
