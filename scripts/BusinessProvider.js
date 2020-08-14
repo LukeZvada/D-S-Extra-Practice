@@ -123,7 +123,7 @@ const businesses = [
             return false 
 })
 
-    xport const filterManufacturingBusiness = businesses.filter(manufacturingObj => {
+    export const filterManufacturingBusiness = businesses.filter(manufacturingObj => {
         if (manufacturingObj.companyIndustry === "Manufacturing") {
             return true
         }
