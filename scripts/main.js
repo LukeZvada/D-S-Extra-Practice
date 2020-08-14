@@ -1,8 +1,8 @@
-import { businessList } from "./BusinessList.js";
-import { business } from "./Business.js";
-import { filterBusiness } from "./BusinessProvider.js";
+import { businessList, NewYorkCompanies } from "./BusinessList.js";
+// import { business } from "./Business.js";
+
 
 
 businessList()
-business()
-filterBusiness()
+// business()
+NewYorkCompanies
