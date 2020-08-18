@@ -30,10 +30,10 @@ export const manufacturingBusiness = (BusinessObj) => {
 
 export const agentHTML = (agentObj) => {
     return ` 
-    <section class="agent__list">
-        <h2 class="agent__title">${agentObj.purchasingAgent.nameFirst} ${agentObj.purchasingAgent.nameLast}</h2>
-        <div class="agent__company">${agentObj.purchasingAgent.company}</div>
-        <div class="agent__phone">${agentObj.purchasingAgent.phoneNumber} </div>
-    </section>
+        <section class="agent__list">
+            <h2 class="agent__title">${agentObj.fullName}</h2>
+                <div class="agent__company">${agentObj.company}</div>
+                <div class="agent__phone">${agentObj.phoneNumber} </div>
+        </section>  
     `
 }
