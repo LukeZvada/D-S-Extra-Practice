@@ -57,7 +57,7 @@ document
            const lastName = agent.nameLast.toLowerCase()
            
            return (firstName.includes(searchValue) || lastName.includes(searchValue))
-        });
+        })
         console.log(foundBusiness)
          
 
@@ -76,4 +76,4 @@ document
                 </section>
             `
         }
-    });
+    })
