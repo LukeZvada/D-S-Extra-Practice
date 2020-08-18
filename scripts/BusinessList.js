@@ -50,25 +50,16 @@ document
         if (keyPressEvent.charCode === 13) {
            const bizArray = useBusiness()
            const searchValue = keyPressEvent.target.value.toLowerCase()
-           
-        
-        /*
-        When user presses enter, find the matching business.
-        You can use the `.includes()` method strings to
-        see if a smaller string is part of a larger string.
-        
-        Example:
-        business.companyName.includes(keyPressEvent.target.value)
-        */
        
-       const foundBusiness = bizArray.find((business) => { 
+        const foundBusiness = bizArray.find((business) => { 
            const agent = business.purchasingAgent;
            const firstName = agent.nameFirst.toLowerCase()
            const lastName = agent.nameLast.toLowerCase()
            
            return (firstName.includes(searchValue) || lastName.includes(searchValue))
-            })
-        
+        });
+        console.log(foundBusiness)
+         
 
             companySearchResultArticle.innerHTML = `
                 <h2>
@@ -83,6 +74,6 @@ document
                 ${foundBusiness.addressStateCode}
                 ${foundBusiness.addressZipCode}
                 </section>
-            `;
+            `
         }
     });
