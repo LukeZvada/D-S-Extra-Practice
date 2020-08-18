@@ -40,3 +40,5 @@ export const agent = () => {
         contentTarget.innerHTML += agentHTML(agentObj)
     })
 }
+
+const businessSearchResult = document.querySelector(".foundCompanies")
