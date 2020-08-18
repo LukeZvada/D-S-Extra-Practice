@@ -52,6 +52,7 @@ document
            const searchValue = keyPressEvent.target.value.toLowerCase()
            
            return (firstName.includes(searchValue) || lastName.includes(searchValue))
+        }
             /*
                 When user presses enter, find the matching business.
                 You can use the `.includes()` method strings to
@@ -78,4 +79,4 @@ document
                 </section>
             `;
         }
-    });
+    );

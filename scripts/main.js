@@ -4,7 +4,7 @@ import { businessList, NewYorkCompanies, manufacturingCompanies, agent } from ".
 
 
 
-businessList()
-NewYorkCompanies()
-manufacturingCompanies()
-agent()
+// businessList()
+// NewYorkCompanies()
+// manufacturingCompanies()
+// agent()
