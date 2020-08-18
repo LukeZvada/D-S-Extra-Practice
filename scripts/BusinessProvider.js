@@ -133,7 +133,7 @@ const businesses = [
     export const purchasingAgent = businesses.map(agentObj => {
         return ` 
         fullName: ${agentObj.purchasingAgent.nameFirst} ${agentObj.purchasingAgent.nameLast},
-        company: agentObj.companyName,
-        phoneNumber: agentObj.phoneWork
+        company: ${agentObj.companyName},
+        phoneNumber: ${agentObj.phoneWork}
         `
     })

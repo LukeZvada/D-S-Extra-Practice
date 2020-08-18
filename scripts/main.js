@@ -1,4 +1,5 @@
-import { businessList, NewYorkCompanies, manufacturingCompanies } from "./BusinessList.js";
+import { businessList, NewYorkCompanies, manufacturingCompanies, agent } from "./BusinessList.js";
+
 
 
 
@@ -6,3 +7,4 @@ import { businessList, NewYorkCompanies, manufacturingCompanies } from "./Busine
 businessList()
 NewYorkCompanies()
 manufacturingCompanies()
+agent()
